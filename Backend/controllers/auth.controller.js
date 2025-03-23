@@ -3,10 +3,10 @@ import crypto from "crypto";
 
 import { User } from "../models/user.model.js";
 import { generateTokenAndsendcookie } from "../utils/generateTokenAndsendcookie.js";
-import { sendVerificationEmail } from "../mailtrap/emails.js";
-import { sendWelcomeEmail } from "../mailtrap/emails.js";
-import { sendPasswordResetEmail } from "../mailtrap/emails.js";
-import { sendPasswordResetSuccessEmail } from "../mailtrap/emails.js";
+import { sendVerificationEmail } from "../emails/emails.js";
+import { sendWelcomeEmail } from "../emails/emails.js";
+import { sendPasswordResetEmail } from "../emails/emails.js";
+import { sendPasswordResetSuccessEmail } from "../emails/emails.js";
 import dotenv from "dotenv";
 
 dotenv.config();
